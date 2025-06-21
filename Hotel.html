@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="hotel.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <div style="background-color: #3a74a7; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div style="font-size: 1.2em;" style="color: rgb(215, 241, 245);">☰ Menu</div>
+            <div style="font-size: 0.9em;">2022</div>
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <img src="https://www.moseleydiamond.com/images/collections/2020-04-15-20-27-14_layout1.jpg" width="80px" alt="Royal Logo" style="height: 30px;">
+                <span style="font-weight: bold;"></span>
+                <span style="color: gold;">* * * *</span>
+            </div>
+        </div>
+        <button style="font-size: 1.2em;" style="color: rgb(136, 220, 233);">Booking </button>
+    </div>
+
+    <nav style="background-color: #3a74a7; padding: 10px 20px; display: flex; justify-content: center; gap: 30px; font-family: Arial, sans-serif;">
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">ROOMS</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">WELLNESS</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">GASTRO</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">HOTEL</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">EVENTS</a>
+        <a href="#" style="color: white; text-decoration: none; padding: 5px 10px;">CONTACT</a>
+    </nav>
+
+    <div style="position: relative; text-align: center; color: white; font-family: Arial, sans-serif;">
+        <img src="https://media.b2broker.com/app/uploads/2023/03/Bahrain-Expo-Report.png" alt="Cityscape background" style="width: 100%; height: auto; display: block;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h1 style="font-size: 4em; margin-bottom: 5px;">Hotel</h1>
+            <h1 style="font-size: 4em; margin-top: 0;">Royal Phoenicia</h1>
+            <p style="font-size: 1.2em; letter-spacing: 1px;">YOUR FAVOURITE PLACE, OUR FAMILY STORY</p>
+        </div>
+    </div>
+
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          
+        </div>
+      </div>
+      <div class="">
+        <div id="iconPlaceholder"  style="font-size: 50px; color: lightgray; margin-bottom: 800px;" style="display: flex; justify-content:center; align-items: center; flex-direction: column; margin-bottom: 20px; ">
+          &#9633; <!-- Unicode character for a square/placeholder -->
+      </div>
+  
+      <button id="hotelText"  style="font-family: Arial, sans-serif; font-size: 24px; color: black; margin-bottom: 20px; text-align: center;">Hotel</button>
+  
+      <script>
+          // Example JavaScript (optional, as the image doesn't suggest dynamic behavior)
+          document.addEventListener('DOMContentLoaded', function() {
+              const hotelText = document.getElementById('hotelText');
+              // You could add interactive elements here if needed
+              // For instance, a simple click event:
+              // hotelText.addEventListener('click', function() {
+              //     alert('Welcome to the Hotel page!');
+              // });
+          });
+      </script>
+
+<div style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
+  <h1 style="color: #333;"></h1>
+  <p style="font-size: 1.1em; color: #555;"></p>
+
+  
+    
+
+      <ul id="hotelFeatures" style="
+ 
+  padding: 30px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y6Z9tbDIcUVQJg676i9FD9_nuhHpKKcmXw&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-size: 1.2em;
+  box-sizing: border-box;
+">
+     
+
+     <div style="
+     background-color: white;
+     padding: 10px 20px;
+     max-width: 400px;
+     margin: 20px auto;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+     border-radius: 5px;
+   ">
+     <ul style=" padding-left: 5px; margin: 5px; font-family: Arial, sans-serif;">
+       <li style="color: #333; ">Favorite Hotel</li>
+       <li style="color: #333; ">Business and Event Spaces</li>
+       <li style="color: #333; ">Diverse Dining Options</li>
+       <li style="color: #333; ">Multiple Swimming Pools</li>
+       <li style="color: #333;">Family-Friendly Amenities</li>
+       
+     </ul>
+    </div>
+
+
+
+
+  
+      </div>
+      <div class="image_item">
+        <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/home1.jpg" width="600px" alt="" class="slide active" onclick="img('image/home1.jpg')">
+        <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/home2.jpg" width="600px" alt="" class="slide" onclick="img('image/home2.jpg')">
+        <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/home3.jpg" width="600px" alt="" class="slide" onclick="img('image/home3.jpg')">
+        <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/home4.jpg" width="600px" alt="" class="slide" onclick="img('image/home4.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="book">
+    <div class="container flex">
+      <div style="display: flex; gap: 50px; margin-bottom: 100px; font-family: Arial, sans-serif;">
+        <div style="background-color: white; padding:130px 130px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: #36454F; font-size: 3em; margin: 0;">Rooms</h2>
+        </div>
+        <div style="background-color: white; padding: 130px 130px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: #36454F; font-size: 3em; margin: 0;">Pools</h2>
+        </div>
+        <div style="background-color: white; padding: 130px 130px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: #36454F; font-size: 3em; margin: 0;">Dining</h2>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 100px;">
+        <p style="color: #666; font-size: 1.2em;">Accommodation</p>
+    </div>
+    
+    </div>
+  </section>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/a1.jpg" width="508px;" height="349px;" alt="" class="image1">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/a2.jpg" width="508px;" alt="" class="image2">
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 40px; max-width: 1200px; margin: auto; box-sizing: border-box;">
+      
+        <!-- Left Side Image -->
+        <div style="flex: 1; padding-right: 20px;">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/home1.jpg" width="508px"
+               alt="Hotel"
+               style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        </div>
+  
+        <!-- Right Side Text Content -->
+        <div style="flex: 1; padding-left: 20px; font-family: Arial, sans-serif;">
+          <h5 style="color: #555; font-size: 16px; margin-bottom: 10px;"></h5>
+          <h2 style="font-size: 28px; margin: 10px 0; color: #222;">About Us</h2>
+          <p style="font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 15px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p style="font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 20px;">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button onclick="alert('More info coming soon!')" style="padding: 10px 20px; font-size: 14px; background-color: #222; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            READ MORE
+          </button>
+        </div>
+  
+      </div>
+  
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        
+
+        <div class="content" style="display: flex; justify-content: center; gap: 20px; padding: 40px; font-family: Arial, sans-serif;">
+
+          <!-- Box 1 -->
+          <div class="box" style="display: flex; flex-direction: column; align-items: center; padding: 20px; width: 200px; border: 1px solid #ccc; border-radius: 8px; background-color: #f8f8f8; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <i class="fas fa-swimming-pool" style="font-size: 24px; color: #007BFF;"></i>
+            <span style="margin-top: 10px; font-size: 16px;">Pool</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi excepturi nobis magnam, dignissimos hic, velit perferendis inventore eum sed numquam vel temporibus eius. Praesentium eligendi omnis laudantium adipisci. Obcaecati!</p>
+          </div>
+      
+          <!-- Box 2 -->
+          <div class="box" style="display: flex; flex-direction: column; align-items: center; padding: 20px; width: 200px; border: 1px solid #ccc; border-radius: 8px; background-color: #f8f8f8; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <i class="fas fa-dumbbell" style="font-size: 24px; color: #28a745;"></i>
+            <span style="margin-top: 10px; font-size: 16px;">Room</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis, dolores dicta eius illum assumenda suscipit, doloremque, exercitationem aspernatur minus molestias odit. Dignissimos nobis quasi, pariatur labore tempora fugiat officiis!</p>
+          </div>
+      
+          <!-- Box 3 -->
+          <div class="box" style="display: flex; flex-direction: column; align-items: center; padding: 20px; width: 200px; border: 1px solid #ccc; border-radius: 8px; background-color: #f8f8f8; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <i class="fas fa-spa" style="font-size: 24px; color: #e83e8c;"></i>
+            <span style="margin-top: 10px; font-size: 16px;">Restaurant</span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim veritatis at consequatur. Recusandae dicta iure ipsa vitae provident, at dolores delectus illum pariatur aut sit hic repellat, officia corporis enim?</p>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms $ Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/r1.jpg"  width="900px;" height="500px;" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/r2.jpg"  width="900px;" height="500px;" alt="">
+          </div>
+          
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/re.jpg"  width="900px;" height="500px;" alt="">
+      </div>
+      
+    </div>
+  </section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+
+
+
+  <section class="gallary mtop " id="gallary">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="https://raw.githubusercontent.com/sunil9813/Hotel-Website/refs/heads/master/image/g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <div style="display: flex; height: 100vh;">
+          <!-- Left Section -->
+          <div style="flex: 1; background-color: #2e6284; padding: 40px; color: #ffffff; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+              <ul style="list-style: none; padding: 0; margin-bottom: 50px;">
+                  <li style="margin-bottom: 20px; font-size: 1.2em;">Rooms</li>
+                  <li style="margin-bottom: 20px; font-size: 1.2em;">Wellness</li>
+                  <li style="margin-bottom: 20px; font-size: 1.2em;">Gastro</li>
+                  <li style="margin-bottom: 20px; font-size: 1.2em;">Hotel</li>
+                  <li style="margin-bottom: 20px; font-size: 1.2em;">Events</li>
+              </ul>
+  
+              <div style="margin-top: auto;">
+                  <h4 style="margin-bottom: 10px;">More about rooms</h4>
+                  <ul style="list-style: none; padding: 0;">
+                      <li style="margin-bottom: 5px;">Dining</li>
+                      <li style="margin-bottom: 5px;">Packages</li>
+                      <li style="margin-bottom: 5px;">Offers</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Right Section -->
+          <div style="flex: 0.7; background-color: #1e4566; padding: 40px; color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+              <div style="margin-bottom: 30px;">
+                  <!-- Placeholder for logo/icon -->
+                  <div style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid #ffffff; display: flex; justify-content: center; align-items: center; margin: 0 auto 15px auto;">
+                      <span style="font-size: 1.5em; color: #ffffff;" src="https://www.moseleydiamond.com/images/collections/2020-04-15-20-27-14_layout1.jpg" width="60px" >&#9733;</span> <!-- Example icon -->
+                  </div>
+                  <h2 style="margin: 0;">Wellness & Pools</h2>
+                  <h1 style="margin: 5px 0 0 0;">Hotel Royal Phoenicia</h1>
+              </div>
+  
+              <div style="margin-bottom: 30px; font-size: 0.9em;">
+                  <p style="margin: 5px 0;">Building 1288</p>
+                  <p style="margin: 5px 0;">Road 3531, Block 339</p>
+                  <p style="margin: 5px 0;">Umm Al Hasam Manama</p>
+                  <p style="margin: 5px 0;">Bahrain</p>
+              </div>
+  
+              <div style="margin-bottom: 30px; font-size: 0.9em;">
+                  <p style="margin: 5px 0;">‪+973 1730 7307‬</p>
+                  <p style="margin: 5px 0;">info@royalphoeniciahotel.com</p>
+                  <p style="margin: 5px 0;">Contacts</p>
+              </div>
+  
+              <div style="display: flex; gap: 15px;">
+                  <!-- Placeholder for social media icons -->
+                  <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ffffff; display: flex; justify-content: center; align-items: center;"></div>
+                  <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ffffff; display: flex; justify-content: center; align-items: center;"></div>
+                  <div style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ffffff; display: flex; justify-content: center; align-items: center;"></div>
+              </div>
+          </div>
+      </div>
+  
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
