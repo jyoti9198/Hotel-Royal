@@ -1,2 +1,2 @@
-# Hotel-Royal
+# Hotel Royal Phoenicia
 frontend project
